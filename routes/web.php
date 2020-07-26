@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('welcome');
+}); */
+
+Route::get('/', 'HomeController@index');
+
+Route::get('/about', 'HomeController@about');
+
+/* Route::get('/about', function () {
+    echo "Hello, I am learning Laravel";
 });
+ */

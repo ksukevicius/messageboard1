@@ -47,9 +47,10 @@
             .title {
                 font-size: 84px;
             }
-
-            .links > a {
-                color: #636b6f;
+            /* commenting out original and will add my own just to play around */
+             .links > a {
+                /* color: #636b6f; */
+                color: #116b6f;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -82,6 +83,8 @@
             <div class="content">
                 <div class="title m-b-md">
                     Laravel
+                    <p>{{ date('Y-m-d') }}</p>
+                    {{date("l", strtotime(date('Y-m-d')))}}
                 </div>
 
                 <div class="links">
@@ -93,6 +96,7 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://vapor.laravel.com">Vapor</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="http://24v.lt">24v</a>
                 </div>
             </div>
         </div>
